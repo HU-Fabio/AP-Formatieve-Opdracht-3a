@@ -12,8 +12,18 @@ public class Generator {
 //      TODO: Move this to own function/check if you can append directly to random.
         List<String> tempList = new ArrayList<>();
         for(int i = 0; i < size; i++) {
-            tempList.add(this.alphabet.get(ThreadLocalRandom.current().nextInt(0, 27)));
+            tempList.add(this.alphabet.get(ThreadLocalRandom.current().nextInt(0, 26)));
         }
         this.random = tempList;
     }
+
+    public List<String> getAlphabet() {
+        return alphabet;
+    }
+
+    public List<String> getRandom() {
+        return random;
+    }
+
+
 }
