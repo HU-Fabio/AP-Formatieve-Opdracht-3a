@@ -3,12 +3,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class Sort {
-    public List bubbelSort(Generator generator) {
+    public List<String> bubbleSort(List<String> alphabet, List<String> list) {
 //      Get the generated list from the generator
-        List<String> alphabet = generator.getAlphabet();
-        List<Integer> randomAlphabetKey = new ArrayList<Integer>();
+        List<Integer> randomAlphabetKey = new ArrayList<>();
 //      Convert the strings of the random list to indexes
-        for (Object o : generator.getRandom()) {
+        for (Object o : list) {
             randomAlphabetKey.add(alphabet.indexOf(o));
         }
 //      Loop through the indexes and sort them

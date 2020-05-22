@@ -4,7 +4,7 @@ public class Main {
 
         Sort sort = new Sort();
 
-        sort.bubbelSort(generator);
+        System.out.println(sort.bubbleSort(generator.getAlphabet(), generator.getRandomVectorList()));
     }
 }
 
